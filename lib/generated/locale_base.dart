@@ -33,7 +33,7 @@ class Localemain {
     return _data[key];
   }
 
-  String get sample => _data["sample"];
-  String get save => _data["save"];
+  String get try_again => _data["try_again"];
+  String get hmu => _data["hmu"];
 }
 

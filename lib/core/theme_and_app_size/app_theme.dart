@@ -4,12 +4,13 @@ import 'package:flutter/material.dart';
 import 'package:hmu/core/theme_and_app_size/sizes_config.dart';
 
 class AppTheme {
+  static const gray = Color(0xffF0F0F0);
   static final ThemeData lightTheme = ThemeData(
     scaffoldBackgroundColor: Colors.white,
     visualDensity: VisualDensity.adaptivePlatformDensity,
     brightness: Brightness.light,
     textTheme: lightTextTheme,
-    // fontFamily: "IRANSans",
+    fontFamily: "Poppins",
   );
   static final TextTheme lightTextTheme = TextTheme(
     headline1: TextStyle(

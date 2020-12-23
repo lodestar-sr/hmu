@@ -1,6 +1,6 @@
 {
   "main": {
-    "sample": "This is sample description",
-    "save": "Use to save document"
+    "try_again": "this used in tray again widget",
+    "hmu": "this used in splash page"
   }
 }
