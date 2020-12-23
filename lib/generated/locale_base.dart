@@ -35,5 +35,9 @@ class Localemain {
 
   String get try_again => _data["try_again"];
   String get hmu => _data["hmu"];
+  String get intro => _data["intro"];
+  String get get_started => _data["get_started"];
+  String get login => _data["login"];
+  String get already_have_an_account => _data["already_have_an_account"];
 }
 

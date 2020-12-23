@@ -17,8 +17,7 @@ class SizeConfig {
   static double verticalMargin;
   static double horizontalMargin;
   static double edgeMargin;
-  static double mostafaScaleNumber =
-      1.4; // I figured if we multiplied Arta's designs by 1.4. Its ratio is closer to the real world
+  static double mostafaScaleNumber = 1;
   static final double iphoneXHeight = 8.12;
   static final double iphoneXwidth = 3.75;
   void init(BoxConstraints constraints, Orientation orientation) {

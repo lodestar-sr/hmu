@@ -1,6 +1,10 @@
 {
   "main": {
     "try_again": "this used in tray again widget",
-    "hmu": "this used in splash page"
+    "hmu": "this used in splash page",
+    "intro": "this used in intro page",
+    "get_started": "this used in intro page",
+    "login": "this used in intro page",
+    "already_have_an_account": "this used in gate page"
   }
 }

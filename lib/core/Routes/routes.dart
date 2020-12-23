@@ -1,2 +1,2 @@
 const String splashRoute = '/';
-const String introPage = 'intro';
+const String gateRoute = '/gate';

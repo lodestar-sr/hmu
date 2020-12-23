@@ -8,7 +8,6 @@ class ButtonText extends StatelessWidget {
   final Function() tapped;
   final Color backgroundColor;
   final Color textColor;
-  final double margin;
   final bool clickable;
   final double width;
   final String icon;
@@ -22,7 +21,6 @@ class ButtonText extends StatelessWidget {
     this.isCenter = true,
     this.clickable = true,
     this.width,
-    this.margin,
     this.icon = "",
   }) : super(key: key);
 
@@ -33,15 +31,14 @@ class ButtonText extends StatelessWidget {
         child: InkWell(
             onTap: () => tapped(),
             child: Container(
-                margin: EdgeInsets.symmetric(
-                    vertical: margin ?? SizeConfig.verticalMargin),
                 height: calHeightScale(44),
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
+                  border: Border.all(color: textColor),
+                  borderRadius: BorderRadius.circular(30),
                   color: (clickable) ? backgroundColor : AppTheme.gray,
                 ),
-                width: width ?? SizeConfig.widthMultiplier * 100,
+                width: width ?? calHeightScale(250),
                 child: Row(
                   mainAxisAlignment: (isCenter)
                       ? MainAxisAlignment.center
@@ -56,8 +53,8 @@ class ButtonText extends StatelessWidget {
                           iconColor: textColor,
                         )),
                     Text(title,
-                        style: Theme.of(context).textTheme.headline3.copyWith(
-                            fontWeight: FontWeight.w400, color: textColor)),
+                        style: Theme.of(context).textTheme.headline4.copyWith(
+                            fontWeight: FontWeight.w700, color: textColor)),
                   ],
                 ))));
   }
