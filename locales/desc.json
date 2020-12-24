@@ -5,6 +5,8 @@
     "intro": "this used in intro page",
     "get_started": "this used in intro page",
     "login": "this used in intro page",
-    "already_have_an_account": "this used in gate page"
+    "already_have_an_account": "this used in gate page",
+    "enter_your_phone_number": "this used in signup page",
+    "phone_number": "this used in signup page"
   }
 }

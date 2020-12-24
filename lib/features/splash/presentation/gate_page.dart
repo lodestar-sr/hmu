@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hmu/core/Routes/routes.dart';
 import 'package:hmu/core/theme_and_app_size/sizes_config.dart';
 import 'package:hmu/widgets/buttons/button_text.dart';
 import 'package:hmu/widgets/logo.dart';
@@ -40,24 +41,31 @@ class _GatePageState extends State<GatePage> {
         Spacer(),
         ButtonText(
           title: loc.main.get_started,
-          tapped: () {},
+          tapped: () {
+            Navigator.pushNamed(context, getPhoneNumberRoute, arguments: false);
+          },
           backgroundColor: Colors.white,
           textColor: Colors.black,
         ),
-        Container(
-          margin: EdgeInsets.symmetric(vertical: calHeightScale(43)),
-          child: RichText(
-              text: TextSpan(children: [
-            TextSpan(
-                text: loc.main.already_have_an_account + " ",
-                style: Theme.of(context).textTheme.headline4),
-            TextSpan(
-                text: loc.main.login,
-                style: Theme.of(context)
-                    .textTheme
-                    .headline4
-                    .copyWith(fontWeight: FontWeight.bold))
-          ])),
+        GestureDetector(
+          onTap: () {
+            Navigator.pushNamed(context, getPhoneNumberRoute, arguments: true);
+          },
+          child: Container(
+            margin: EdgeInsets.symmetric(vertical: calHeightScale(43)),
+            child: RichText(
+                text: TextSpan(children: [
+              TextSpan(
+                  text: loc.main.already_have_an_account + " ",
+                  style: Theme.of(context).textTheme.headline4),
+              TextSpan(
+                  text: loc.main.login,
+                  style: Theme.of(context)
+                      .textTheme
+                      .headline4
+                      .copyWith(fontWeight: FontWeight.bold))
+            ])),
+          ),
         )
       ],
     )));
