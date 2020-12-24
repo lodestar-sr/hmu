@@ -41,5 +41,6 @@ class Localemain {
   String get already_have_an_account => _data["already_have_an_account"];
   String get enter_your_phone_number => _data["enter_your_phone_number"];
   String get phone_number => _data["phone_number"];
+  String get continue_ => _data["continue_"];
 }
 

@@ -1,13 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:hmu/core/Routes/router.dart' as appRoute;
 import 'core/Routes/routes.dart';
 import 'core/theme_and_app_size/app_theme.dart';
 import 'core/theme_and_app_size/sizes_config.dart';
 import 'localization_delegate.dart';
+import 'injection_container.dart' as di;
 
 void main() {
-  runApp(MyApp());
+  WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp])
+      .then((_) async {
+    await di.init();
+    runApp(MyApp());
+  });
 }
 
 var loc;

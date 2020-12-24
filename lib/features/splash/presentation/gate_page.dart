@@ -41,6 +41,7 @@ class _GatePageState extends State<GatePage> {
         Spacer(),
         ButtonText(
           title: loc.main.get_started,
+          bottomMargin: 0,
           tapped: () {
             Navigator.pushNamed(context, getPhoneNumberRoute, arguments: false);
           },

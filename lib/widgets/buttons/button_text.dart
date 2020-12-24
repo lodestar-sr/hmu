@@ -11,11 +11,13 @@ class ButtonText extends StatelessWidget {
   final bool clickable;
   final double width;
   final String icon;
+  final double bottomMargin;
   final bool isCenter;
   const ButtonText({
     Key key,
     @required this.title,
     @required this.tapped,
+    @required this.bottomMargin,
     this.backgroundColor = Colors.black,
     this.textColor = Colors.white,
     this.isCenter = true,
@@ -32,10 +34,11 @@ class ButtonText extends StatelessWidget {
             onTap: () => tapped(),
             child: Container(
                 height: calHeightScale(44),
+                margin: EdgeInsets.only(bottom: bottomMargin),
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
                   border: Border.all(color: textColor),
-                  borderRadius: BorderRadius.circular(30),
+                  borderRadius: BorderRadius.circular(9999),
                   color: (clickable) ? backgroundColor : AppTheme.gray,
                 ),
                 width: width ?? calHeightScale(250),

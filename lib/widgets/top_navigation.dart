@@ -13,6 +13,7 @@ class TopNavigation extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: calHeightScale(74),
+      alignment: Alignment.centerLeft,
       child: Container(
           child: ButtonIcon(
               icon: ProjectIcons.chervonLeft,

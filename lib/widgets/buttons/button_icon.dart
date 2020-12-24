@@ -30,8 +30,8 @@ class ButtonIcon extends StatelessWidget {
         child: InkWell(
           onTap: () => tapped(),
           child: Container(
-            width: width ?? calHeightScale(34),
-            height: height ?? calHeightScale(34),
+            width: width ?? calHeightScale(44),
+            height: height ?? calHeightScale(44),
             padding: EdgeInsets.all(padding ?? calHeightScale(10)),
             decoration: BoxDecoration(
                 color: backgroundColor,
