@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:hmu/core/Routes/routes.dart';
 import 'package:hmu/core/theme_and_app_size/sizes_config.dart';
 import 'package:hmu/core/utils/presentation_functions.dart';
 import 'package:hmu/widgets/buttons/bloc/button_bloc.dart';
-import 'package:hmu/widgets/buttons/button_text.dart';
+import 'package:hmu/widgets/buttons/button_fab.dart';
 import 'package:hmu/widgets/input_form.dart/input_form.dart';
 import 'package:hmu/widgets/top_navigation.dart';
 
@@ -44,6 +45,7 @@ class _GetPhoneNumberPageState extends State<GetPhoneNumberPage> {
                           placeHolder: loc.main.phone_number,
                           hint: loc.main.enter_your_phone_number,
                           maxLentgh: 11,
+                          haveAreaCode: true,
                           onChanged: (text) {
                             phone = text;
                           },
@@ -60,24 +62,8 @@ class _GetPhoneNumberPageState extends State<GetPhoneNumberPage> {
                   ),
                 ),
               ),
-              floatingActionButton: Container(
-                  padding: EdgeInsets.only(
-                      bottom: MediaQuery.of(context).padding.bottom),
-                  child: (state is ButtonChanged)
-                      ? ButtonText(
-                          title: loc.main.continue_,
-                          tapped: () => _nextPage(),
-                          backgroundColor: state.backgroundColor,
-                          textColor: state.textColor,
-                          bottomMargin: state.bottomMargin,
-                        )
-                      : ButtonText(
-                          title: loc.main.continue_,
-                          tapped: () => _nextPage(),
-                          backgroundColor: Colors.white,
-                          textColor: Colors.black,
-                          bottomMargin: calHeightScale(44),
-                        )),
+              floatingActionButton:
+                  ButtonFAB(state: state, nextPage: _nextPage),
               floatingActionButtonLocation:
                   FloatingActionButtonLocation.centerDocked,
             );
@@ -85,5 +71,7 @@ class _GetPhoneNumberPageState extends State<GetPhoneNumberPage> {
         ));
   }
 
-  void _nextPage() {}
+  void _nextPage() {
+    Navigator.pushNamed(context, verifyCodeRoute, arguments: widget.isLogin);
+  }
 }

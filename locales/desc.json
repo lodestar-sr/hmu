@@ -8,6 +8,8 @@
     "already_have_an_account": "this used in gate page",
     "enter_your_phone_number": "this used in signup page",
     "phone_number": "this used in signup page",
-    "continue_": "this used in signup page"
+    "continue_": "this used in signup page",
+    "code_verify_hint": "this used in codeverify page",
+    "verify_code_notice": "this used in verify code page"
   }
 }

@@ -42,5 +42,7 @@ class Localemain {
   String get enter_your_phone_number => _data["enter_your_phone_number"];
   String get phone_number => _data["phone_number"];
   String get continue_ => _data["continue_"];
+  String get code_verify_hint => _data["code_verify_hint"];
+  String get verify_code_notice => _data["verify_code_notice"];
 }
 

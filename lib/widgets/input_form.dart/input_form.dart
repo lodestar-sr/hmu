@@ -9,6 +9,7 @@ class InputForm extends StatefulWidget {
   final String hint;
   final bool haveReloadIcon;
   final int maxLentgh;
+  final bool isSecure;
   final Function(String) onChanged;
   final Function(bool) onFocused;
   InputForm(
@@ -19,6 +20,7 @@ class InputForm extends StatefulWidget {
       @required this.maxLentgh,
       @required this.onFocused,
       this.initalText,
+      this.isSecure,
       this.haveAreaCode,
       this.haveReloadIcon})
       : super(key: key);
@@ -49,6 +51,8 @@ class _InputFormState extends State<InputForm> {
               onFocusChange: (state) => widget.onFocused(state),
               child: TextField(
                 controller: controller,
+                obscureText: widget.isSecure ?? false,
+                obscuringCharacter: '*',
                 onChanged: (text) => widget.onChanged(text),
                 keyboardType: TextInputType.phone,
                 textAlign: TextAlign.center,
@@ -70,24 +74,28 @@ class _InputFormState extends State<InputForm> {
               ),
             ),
           ),
-          Positioned(
-            bottom: calHeightScale(59) / 5,
-            left: calWidthScale(13),
-            child: Container(
-              width: calWidthScale(60),
-              height: calHeightScale(37),
-              padding: EdgeInsets.symmetric(
-                  horizontal: calHeightScale(12), vertical: calHeightScale(5)),
-              decoration: BoxDecoration(
-                color: AppTheme.middleGray,
-                borderRadius: BorderRadius.circular(32),
-              ),
-              child: Text(
-                "+44",
-                style: Theme.of(context)
-                    .textTheme
-                    .headline3
-                    .copyWith(fontWeight: FontWeight.w600),
+          Visibility(
+            visible: widget.haveAreaCode ?? false,
+            child: Positioned(
+              bottom: calHeightScale(59) / 5,
+              left: calWidthScale(13),
+              child: Container(
+                width: calWidthScale(60),
+                height: calHeightScale(37),
+                padding: EdgeInsets.symmetric(
+                    horizontal: calHeightScale(12),
+                    vertical: calHeightScale(5)),
+                decoration: BoxDecoration(
+                  color: AppTheme.middleGray,
+                  borderRadius: BorderRadius.circular(32),
+                ),
+                child: Text(
+                  "+44",
+                  style: Theme.of(context)
+                      .textTheme
+                      .headline3
+                      .copyWith(fontWeight: FontWeight.w600),
+                ),
               ),
             ),
           ),

@@ -8,6 +8,8 @@
     "already_have_an_account": "Already have an account?",
     "enter_your_phone_number": "Enter your phone number",
     "phone_number": "Phone number",
-    "continue_": "Continue"
+    "continue_": "Continue",
+    "code_verify_hint": "We sent you a code to verify your number.",
+    "verify_code_notice": "CODE SHOULD AUTOMATICALLY BE ENTERED & GO TO NEXT SCREEN "
   }
 }

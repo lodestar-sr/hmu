@@ -6,6 +6,7 @@ import 'package:hmu/core/theme_and_app_size/sizes_config.dart';
 class AppTheme {
   static const gray = Color(0xffF0F0F0);
   static const middleGray = Color(0xffC4C4C4);
+  static const red = Color(0xffFF1C1C);
   static final ThemeData lightTheme = ThemeData(
     scaffoldBackgroundColor: Colors.white,
     visualDensity: VisualDensity.adaptivePlatformDensity,
