@@ -37,7 +37,9 @@ class _GetPhoneNumberPageState extends State<GetPhoneNumberPage> {
                     splashColor: Colors.transparent,
                     highlightColor: Colors.transparent,
                     onTap: () => FocusScope.of(context).unfocus(),
-                    child: Column(
+                    child: ListView(
+                      primary: false,
+                      physics: NeverScrollableScrollPhysics(),
                       children: [
                         TopNavigation(),
                         SizedBox(height: calHeightScale(186)),

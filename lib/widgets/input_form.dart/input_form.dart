@@ -52,7 +52,7 @@ class _InputFormState extends State<InputForm> {
               child: TextField(
                 controller: controller,
                 obscureText: widget.isSecure ?? false,
-                obscuringCharacter: '*',
+                obscuringCharacter: '✻',
                 onChanged: (text) => widget.onChanged(text),
                 keyboardType: TextInputType.phone,
                 textAlign: TextAlign.center,
@@ -91,6 +91,7 @@ class _InputFormState extends State<InputForm> {
                 ),
                 child: Text(
                   "+44",
+                  textAlign: TextAlign.center,
                   style: Theme.of(context)
                       .textTheme
                       .headline3

@@ -38,7 +38,9 @@ class _VerifyCodePageState extends State<VerifyCodePage> {
                     splashColor: Colors.transparent,
                     highlightColor: Colors.transparent,
                     onTap: () => FocusScope.of(context).unfocus(),
-                    child: Column(
+                    child: ListView(
+                      primary: false,
+                      physics: NeverScrollableScrollPhysics(),
                       children: [
                         TopNavigation(),
                         (_isFocused)
@@ -60,7 +62,7 @@ class _VerifyCodePageState extends State<VerifyCodePage> {
                                 height: calHeightScale(186),
                               ),
                         InputForm(
-                          placeHolder: "******",
+                          placeHolder: "✻ ✻ ✻ ✻ ✻ ✻",
                           hint: loc.main.code_verify_hint,
                           maxLentgh: 6,
                           isSecure: true,
