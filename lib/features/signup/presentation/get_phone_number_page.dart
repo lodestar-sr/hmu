@@ -5,7 +5,7 @@ import 'package:hmu/core/theme_and_app_size/sizes_config.dart';
 import 'package:hmu/core/utils/presentation_functions.dart';
 import 'package:hmu/widgets/buttons/bloc/button_bloc.dart';
 import 'package:hmu/widgets/buttons/button_fab.dart';
-import 'package:hmu/widgets/input_form.dart/input_form.dart';
+import 'package:hmu/widgets/input_form.dart/presentation/input_form.dart';
 import 'package:hmu/widgets/top_navigation.dart';
 
 import '../../../injection_container.dart';
@@ -21,6 +21,7 @@ class GetPhoneNumberPage extends StatefulWidget {
 
 class _GetPhoneNumberPageState extends State<GetPhoneNumberPage> {
   String phone = "";
+  String countryCode = "";
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
@@ -57,6 +58,12 @@ class _GetPhoneNumberPageState extends State<GetPhoneNumberPage> {
                                     Colors.white, calHeightScale(123))
                                 : buttonChanger(context, Colors.white,
                                     Colors.black, calHeightScale(55));
+                          },
+                          countryCodeOnChanged: (code) {
+                            countryCode = code;
+                          },
+                          countryCodeSuggestionSelected: (code) {
+                            countryCode = code;
                           },
                         ),
                       ],

@@ -10,6 +10,7 @@
     "phone_number": "Phone number",
     "continue_": "Continue",
     "code_verify_hint": "We sent you a code to verify your number.",
-    "verify_code_notice": "CODE SHOULD AUTOMATICALLY BE ENTERED & GO TO NEXT SCREEN "
+    "verify_code_notice": "CODE SHOULD AUTOMATICALLY BE ENTERED & GO TO NEXT SCREEN ",
+    "country_code_not_found": "Country code not found."
   }
 }

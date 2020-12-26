@@ -1,0 +1,23 @@
+[
+    {
+        "Iso2": "BD",
+        "Name": "Bangladesh",
+        "Iso3": "BGD",
+        "Unicode": "bangladesh",
+        "Dial": "880",
+        "Currency": "BDT",
+        "Capital": "Dhaka",
+        "Continent": "AS"
+    },
+    {
+        "Iso2": "BE",
+        "Name": "Belgium",
+        "Iso3": "BEL",
+        "Unicode": "belgium",
+        "Dial": "32",
+        "Currency": "EUR",
+        "Capital": "Brussels",
+        "Continent": "EU"
+    }
+   
+]

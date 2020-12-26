@@ -44,5 +44,6 @@ class Localemain {
   String get continue_ => _data["continue_"];
   String get code_verify_hint => _data["code_verify_hint"];
   String get verify_code_notice => _data["verify_code_notice"];
+  String get country_code_not_found => _data["country_code_not_found"];
 }
 

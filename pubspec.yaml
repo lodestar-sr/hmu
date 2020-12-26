@@ -25,6 +25,7 @@ dependencies:
   shared_preferences: ^0.5.12+4
   # UI Dependecies
   flushbar: ^1.10.4
+  flutter_typeahead: ^1.9.1
   flutter_spinkit: "^4.1.2"
   flutter_svg: ^0.19.2+1
   flutter_localizations:
@@ -52,6 +53,7 @@ flutter:
     - assets/images/
     - assets/icons/
     - assets/fonts/
+    - assets/json/
 
   #   - images/a_dot_ham.jpeg
 

@@ -10,6 +10,7 @@
     "phone_number": "this used in signup page",
     "continue_": "this used in signup page",
     "code_verify_hint": "this used in codeverify page",
-    "verify_code_notice": "this used in verify code page"
+    "verify_code_notice": "this used in verify code page",
+    "country_code_not_found": "this used in input form widget"
   }
 }
