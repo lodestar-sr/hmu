@@ -4,8 +4,8 @@ import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
 import 'package:hmu/usecases/usecase.dart';
-import 'package:hmu/widgets/input_form.dart/domain/entities/country_codes.dart';
-import 'package:hmu/widgets/input_form.dart/domain/usecases/get_country_codes.dart';
+import 'package:hmu/widgets/input_form/domain/entities/country_codes.dart';
+import 'package:hmu/widgets/input_form/domain/usecases/get_country_codes.dart';
 
 part 'input_form_event.dart';
 part 'input_form_state.dart';

@@ -1,8 +1,8 @@
 import 'dart:convert';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:hmu/widgets/input_form.dart/data/models/country_codes_model.dart';
-import 'package:hmu/widgets/input_form.dart/domain/entities/country_codes.dart';
+import 'package:hmu/widgets/input_form/data/models/country_codes_model.dart';
+import 'package:hmu/widgets/input_form/domain/entities/country_codes.dart';
 
 import '../../../../../fixtures/fixture_reader.dart';
 

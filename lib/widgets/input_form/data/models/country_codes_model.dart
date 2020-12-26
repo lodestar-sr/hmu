@@ -1,4 +1,4 @@
-import 'package:hmu/widgets/input_form.dart/domain/entities/country_codes.dart';
+import 'package:hmu/widgets/input_form/domain/entities/country_codes.dart';
 
 class CountryCodesModel extends CountryCodes {
   CountryCodesModel(

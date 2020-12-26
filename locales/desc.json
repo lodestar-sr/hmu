@@ -11,6 +11,8 @@
     "continue_": "this used in signup page",
     "code_verify_hint": "this used in codeverify page",
     "verify_code_notice": "this used in verify code page",
-    "country_code_not_found": "this used in input form widget"
+    "country_code_not_found": "this used in input form widget",
+    "how_old_are_you": "this used in agfe page",
+    "age_notice": "this used in age page"
   }
 }

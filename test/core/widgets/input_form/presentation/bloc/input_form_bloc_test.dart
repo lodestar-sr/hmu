@@ -1,9 +1,9 @@
 import 'package:dartz/dartz.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:hmu/core/error/failures.dart';
-import 'package:hmu/widgets/input_form.dart/domain/entities/country_codes.dart';
-import 'package:hmu/widgets/input_form.dart/domain/usecases/get_country_codes.dart';
-import 'package:hmu/widgets/input_form.dart/presentation/bloc/input_form_bloc.dart';
+import 'package:hmu/widgets/input_form/domain/entities/country_codes.dart';
+import 'package:hmu/widgets/input_form/domain/usecases/get_country_codes.dart';
+import 'package:hmu/widgets/input_form/presentation/bloc/input_form_bloc.dart';
 import 'package:mockito/mockito.dart';
 
 class MockGetCountriesCode extends Mock implements GetCountryCodes {}

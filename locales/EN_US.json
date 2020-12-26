@@ -11,6 +11,8 @@
     "continue_": "Continue",
     "code_verify_hint": "We sent you a code to verify your number.",
     "verify_code_notice": "CODE SHOULD AUTOMATICALLY BE ENTERED & GO TO NEXT SCREEN ",
-    "country_code_not_found": "Country code not found."
+    "country_code_not_found": "Country code not found.",
+    "how_old_are_you": "How old are you?",
+    "age_notice": "This will help us match you with more revelavant people."
   }
 }

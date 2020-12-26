@@ -45,5 +45,7 @@ class Localemain {
   String get code_verify_hint => _data["code_verify_hint"];
   String get verify_code_notice => _data["verify_code_notice"];
   String get country_code_not_found => _data["country_code_not_found"];
+  String get how_old_are_you => _data["how_old_are_you"];
+  String get age_notice => _data["age_notice"];
 }
 
