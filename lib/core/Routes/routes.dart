@@ -3,3 +3,7 @@ const String gateRoute = '/gate';
 const String getPhoneNumberRoute = '/getPhoneNumber';
 const String verifyCodeRoute = '/verifyCode';
 const String ageRoute = '/age';
+const String genderRoute = '/gender';
+const String otherRote = '/other';
+const String whoFloatsYourBoatRoute = "/whoFloatsYourBoat";
+const String nicknameRoute = '/nickname';

@@ -46,6 +46,18 @@ class Localemain {
   String get verify_code_notice => _data["verify_code_notice"];
   String get country_code_not_found => _data["country_code_not_found"];
   String get how_old_are_you => _data["how_old_are_you"];
-  String get age_notice => _data["age_notice"];
+  String get notice => _data["notice"];
+  String get select_your_gender => _data["select_your_gender"];
+  String get girl => _data["girl"];
+  String get guy => _data["guy"];
+  String get non_binary => _data["non_binary"];
+  String get other => _data["other"];
+  String get transgender => _data["transgender"];
+  String get transsexual => _data["transsexual"];
+  String get gender_queer => _data["gender_queer"];
+  String get gender_fluid => _data["gender_fluid"];
+  String get gender_variant => _data["gender_variant"];
+  String get crossdresser => _data["crossdresser"];
+  String get who_floats_your_boat => _data["who_floats_your_boat"];
 }
 

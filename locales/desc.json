@@ -13,6 +13,18 @@
     "verify_code_notice": "this used in verify code page",
     "country_code_not_found": "this used in input form widget",
     "how_old_are_you": "this used in agfe page",
-    "age_notice": "this used in age page"
+    "notice": "this used in age , gender, other , float botas  page",
+    "select_your_gender": "this used in gender pages",
+    "girl": "this used in gender page",
+    "guy": "this used in gender page",
+    "non_binary": "this used in gender page",
+    "other": "this used in gender page",
+    "transgender": "this used in other page",
+    "transsexual": "this used in other page",
+    "gender_queer": "this used in other page",
+    "gender_fluid": "this used in other page",
+    "gender_variant": "this used in other page",
+    "crossdresser": "this used in other page",
+    "who_floats_your_boat": "this used in float boat page"
   }
 }

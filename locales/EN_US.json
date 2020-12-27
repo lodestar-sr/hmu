@@ -13,6 +13,18 @@
     "verify_code_notice": "CODE SHOULD AUTOMATICALLY BE ENTERED & GO TO NEXT SCREEN ",
     "country_code_not_found": "Country code not found.",
     "how_old_are_you": "How old are you?",
-    "age_notice": "This will help us match you with more revelavant people."
+    "notice": "This will help us match you with more revelavant people.",
+    "select_your_gender": "Select your gender",
+    "girl": "Girl",
+    "guy": "Guy",
+    "non_binary": "Non Binary",
+    "other": "Other",
+    "transgender": "Transgender",
+    "transsexual": "Transsexual",
+    "gender_queer": "Gender queer",
+    "gender_fluid": "Gender fluid",
+    "gender_variant": "Gender variant",
+    "crossdresser": "Crossdresser",
+    "who_floats_your_boat": "Who floats your boat?"
   }
 }

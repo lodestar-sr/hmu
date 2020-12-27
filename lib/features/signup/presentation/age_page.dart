@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:hmu/core/Routes/routes.dart';
 
 import 'package:hmu/core/theme_and_app_size/sizes_config.dart';
 import 'package:hmu/core/utils/presentation_functions.dart';
@@ -55,7 +56,7 @@ class _AgePageState extends State<AgePage> {
                           child: InputForm(
                             initalText: age.toString(),
                             placeHolder: "",
-                            hint: loc.main.age_notice,
+                            hint: loc.main.notice,
                             onChanged: (age) {},
                             maxLentgh: 3,
                             onFocused: (isFocused) {},
@@ -82,7 +83,11 @@ class _AgePageState extends State<AgePage> {
                     bottom: 0,
                     child: Column(
                       children: [
-                        ButtonFAB(state: state, nextPage: () {}),
+                        ButtonFAB(
+                            state: state,
+                            nextPage: () {
+                              Navigator.pushNamed(context, genderRoute);
+                            }),
                         Container(
                             margin: EdgeInsets.only(
                                 bottom:
