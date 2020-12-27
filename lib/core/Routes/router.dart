@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hmu/core/Routes/routes.dart';
+import 'package:hmu/features/signup/presentation/age_page.dart';
 import 'package:hmu/features/signup/presentation/get_phone_number_page.dart';
 import 'package:hmu/features/signup/presentation/verify_code_page.dart';
 import 'package:hmu/features/splash/presentation/gate_page.dart';
@@ -24,6 +25,8 @@ class Router {
             builder: (_) => VerifyCodePage(
                   isLogin: arg,
                 ));
+      case ageRoute:
+        return MaterialPageRoute(builder: (_) => AgePage());
       default:
         return MaterialPageRoute(
             builder: (_) => Scaffold(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_typeahead/flutter_typeahead.dart';
 import 'package:hmu/core/theme_and_app_size/app_theme.dart';
@@ -16,11 +17,13 @@ class InputForm extends StatefulWidget {
   final bool haveReloadIcon;
   final int maxLentgh;
   final bool isSecure;
+  final bool readOnly;
   final Function(String) onChanged;
   final Function(bool) onFocused;
-
   final Function(String) countryCodeOnChanged;
   final Function(String) countryCodeSuggestionSelected;
+  final Function() onTap;
+
   InputForm(
       {Key key,
       @required this.placeHolder,
@@ -28,7 +31,9 @@ class InputForm extends StatefulWidget {
       @required this.onChanged,
       @required this.maxLentgh,
       @required this.onFocused,
+      this.onTap,
       this.initalText,
+      this.readOnly = false,
       this.isSecure = false,
       this.haveAreaCode = false,
       this.haveReloadIcon = false,
@@ -65,13 +70,17 @@ class _InputFormState extends State<InputForm> {
             child: Focus(
               onFocusChange: (state) => widget.onFocused(state),
               child: TextField(
+                onTap: () => (widget.readOnly) ? widget.onTap() : () {},
                 controller: controller,
                 obscureText: widget.isSecure ?? false,
                 obscuringCharacter: '✻',
+                showCursor: !widget.readOnly,
+                readOnly: widget.readOnly,
                 onChanged: (text) => widget.onChanged(text),
                 keyboardType: TextInputType.phone,
-                textAlign:
-                    (widget.isSecure) ? TextAlign.center : TextAlign.left,
+                textAlign: (widget.isSecure || widget.readOnly)
+                    ? TextAlign.center
+                    : TextAlign.left,
                 maxLength: widget.maxLentgh,
                 style: Theme.of(context)
                     .textTheme
@@ -209,8 +218,10 @@ class _InputFormState extends State<InputForm> {
       ),
       Container(
         margin: EdgeInsets.only(top: calHeightScale(24)),
+        padding: EdgeInsets.symmetric(horizontal: SizeConfig.edgeMargin),
         child: Text(
           widget.hint,
+          textAlign: TextAlign.center,
           style: Theme.of(context)
               .textTheme
               .headline5

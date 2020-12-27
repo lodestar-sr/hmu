@@ -5,6 +5,7 @@ import 'package:hmu/widgets/input_form/data/repository/input_form_repository_imp
 import 'package:hmu/widgets/input_form/domain/repositories/input_form_repository.dart';
 import 'package:hmu/widgets/input_form/domain/usecases/get_country_codes.dart';
 import 'package:hmu/widgets/input_form/presentation/bloc/input_form_bloc.dart';
+import 'package:hmu/widgets/spin_number_picker/bloc/change_age_bloc.dart';
 
 final sl = GetIt.instance;
 Future<void> init() async {
@@ -19,4 +20,5 @@ void _injectWidget() {
       () => InputFormRepositoryImpl(localDataSource: sl()));
   sl.registerLazySingleton<InputFormLocalDataSource>(
       () => InputFormLocalDataSourceImpl());
+  sl.registerFactory(() => ChangeAgeBloc());
 }
