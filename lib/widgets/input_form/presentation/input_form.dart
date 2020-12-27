@@ -92,9 +92,9 @@ class _InputFormState extends State<InputForm> {
                 decoration: InputDecoration(
                     contentPadding: EdgeInsets.fromLTRB(
                         (widget.haveAreaCode) ? calWidthScale(120) : 0,
-                        0,
-                        0,
-                        (widget.haveReloadIcon) ? calWidthScale(10) : 0),
+                        calHeightScale(10),
+                        (widget.haveReloadIcon) ? calWidthScale(10) : 0,
+                        0),
                     border: InputBorder.none,
                     hintText: widget.placeHolder,
                     hintStyle: Theme.of(context).textTheme.headline2.copyWith(

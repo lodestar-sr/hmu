@@ -49,7 +49,6 @@ class _SpinNumberPickerState extends State<SpinNumberPicker> {
                 splashColor: Colors.transparent,
                 highlightColor: Colors.transparent,
                 onTap: () {
-                  print("YES");
                   widget.ageSelected(age);
                 },
                 child: NumberPicker.integer(
@@ -63,6 +62,7 @@ class _SpinNumberPickerState extends State<SpinNumberPicker> {
                               fontWeight: FontWeight.w600,
                             ),
                     itemExtent: calHeightScale(80),
+                    listViewWidth: calWidthScale(80),
                     initialValue: age,
                     minValue: 18,
                     maxValue: 125,

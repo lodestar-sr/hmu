@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hmu/core/Routes/routes.dart';
@@ -36,6 +38,10 @@ class ButtonItem extends StatelessWidget {
                     ? Navigator.pushNamed(context, otherRote,
                         arguments: nextRoute)
                     : Navigator.pushNamed(context, nextRoute);
+                Timer(
+                  Duration(milliseconds: 100),
+                  () => buttonChanger(context, Colors.white, Colors.black, 0),
+                );
               },
               onTapUp: (details) =>
                   buttonChanger(context, Colors.white, Colors.black, 0),
