@@ -59,6 +59,9 @@ class _InputFormState extends State<InputForm> {
 
   @override
   Widget build(BuildContext context) {
+    if (widget.readOnly) {
+      controller = TextEditingController(text: widget.initalText);
+    }
     return Column(children: [
       Stack(
         children: [

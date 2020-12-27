@@ -4,6 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hmu/core/theme_and_app_size/sizes_config.dart';
 import 'package:hmu/core/utils/presentation_functions.dart';
 import 'package:hmu/widgets/buttons/bloc/button_bloc.dart';
+import 'package:hmu/widgets/buttons/button_fab.dart';
 
 import 'package:hmu/widgets/input_form/presentation/input_form.dart';
 import 'package:hmu/widgets/spin_number_picker/spin_number_picker.dart';
@@ -37,9 +38,10 @@ class _AgePageState extends State<AgePage> {
                     splashColor: Colors.transparent,
                     highlightColor: Colors.transparent,
                     onTap: () {
-                      openKeyboard = false;
                       buttonChanger(context, Colors.white, Colors.black,
                           calHeightScale(55));
+
+                      openKeyboard = false;
                     },
                     child: ListView(
                       primary: false,
@@ -59,9 +61,11 @@ class _AgePageState extends State<AgePage> {
                             onFocused: (isFocused) {},
                             readOnly: true,
                             onTap: () {
-                              openKeyboard = true;
                               buttonChanger(context, Colors.black, Colors.white,
-                                  calHeightScale(123));
+                                  calHeightScale(30));
+                              setState(() {
+                                openKeyboard = true;
+                              });
                             },
                           ),
                         )
@@ -70,20 +74,38 @@ class _AgePageState extends State<AgePage> {
                   ),
                 ),
               ),
-              floatingActionButton: Container(
-                  margin: EdgeInsets.only(bottom: calHeightScale(40)),
-                  child: Visibility(
-                      visible: openKeyboard,
-                      child: SpinNumberPicker(
-                        age: 18,
-                        ageChanged: (number) {
-                          age = number;
-                        },
-                        ageSelected: (number) {
-                          age = number;
-                          openKeyboard = false;
-                        },
-                      ))),
+              floatingActionButton: Stack(
+                children: [
+                  Positioned(
+                    left: 0,
+                    right: 0,
+                    bottom: 0,
+                    child: Column(
+                      children: [
+                        ButtonFAB(state: state, nextPage: () {}),
+                        Container(
+                            margin: EdgeInsets.only(
+                                bottom:
+                                    calHeightScale((openKeyboard) ? 40 : 0)),
+                            child: Visibility(
+                                visible: openKeyboard,
+                                child: SpinNumberPicker(
+                                  age: age,
+                                  ageChanged: (number) {
+                                    age = number;
+                                  },
+                                  ageSelected: (number) {
+                                    age = number;
+                                    setState(() {
+                                      openKeyboard = false;
+                                    });
+                                  },
+                                ))),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
               floatingActionButtonLocation:
                   FloatingActionButtonLocation.centerDocked,
             );
