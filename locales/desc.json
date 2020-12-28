@@ -28,6 +28,27 @@
     "who_floats_your_boat": "this used in float boat page",
     "nickname_hint": "this used in nickname page",
     "nickname": "this used in nickname page",
-    "revealchatcom": "this used in nickname page"
+    "revealchatcom": "this used in nickname page",
+    "add_your_avatar": "this used in avatar page",
+    "avatar_notice": "this used in avtar page",
+    "start_chatting": "this used in avatar page",
+    "premium_avatar_locked": "this used in avatar page.",
+    "premium_avtar_notice": "this used in avatar page",
+    "go_premium": "this used in avatar page",
+    "done": "this used in premium model",
+    "monthly_price": "this used in premium modal",
+    "weekly_price": "this used in premium modal",
+    "premium_modal_notice": "this used in premium modal",
+    "restore_purchase": "this used in premium modal",
+    "terms_and_conditions": "this used in premium modal page",
+    "with_premium_i_can": "this used in premium modal page",
+    "get_unlimited_hmus": "this used in premium modal page",
+    "see_users_just_from_your_country": "this used in premium modal",
+    "premium_avatars": "this used in premium modal",
+    "choose_message_colour": "this used in premium modal page",
+    "advert_free_experience": "this used in premium modal page",
+    "priority_support_from_the_reveal_team": "this used in premium modal ",
+    "start_montly_plan": "this used in premium modal",
+    "start_weekly_plan": "this used in premium modal "
   }
 }

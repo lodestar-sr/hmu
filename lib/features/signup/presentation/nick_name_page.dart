@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:hmu/core/Routes/routes.dart';
 import 'package:hmu/core/theme_and_app_size/app_theme.dart';
 import 'package:hmu/core/theme_and_app_size/sizes_config.dart';
 import 'package:hmu/core/utils/presentation_functions.dart';
@@ -90,6 +91,9 @@ class _NicknamePageState extends State<NicknamePage> {
   }
 
   void _nextPage() {
-    // Navigator.pushNamed(context, "",);
+    Navigator.pushNamed(
+      context,
+      avatarRoute,
+    );
   }
 }

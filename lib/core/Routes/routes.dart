@@ -7,3 +7,4 @@ const String genderRoute = '/gender';
 const String otherRote = '/other';
 const String whoFloatsYourBoatRoute = "/whoFloatsYourBoat";
 const String nicknameRoute = '/nickname';
+const String avatarRoute = '/avatar';

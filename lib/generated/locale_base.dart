@@ -62,5 +62,26 @@ class Localemain {
   String get nickname_hint => _data["nickname_hint"];
   String get nickname => _data["nickname"];
   String get revealchatcom => _data["revealchatcom"];
+  String get add_your_avatar => _data["add_your_avatar"];
+  String get avatar_notice => _data["avatar_notice"];
+  String get start_chatting => _data["start_chatting"];
+  String get premium_avatar_locked => _data["premium_avatar_locked"];
+  String get premium_avtar_notice => _data["premium_avtar_notice"];
+  String get go_premium => _data["go_premium"];
+  String get done => _data["done"];
+  String get monthly_price => _data["monthly_price"];
+  String get weekly_price => _data["weekly_price"];
+  String get premium_modal_notice => _data["premium_modal_notice"];
+  String get restore_purchase => _data["restore_purchase"];
+  String get terms_and_conditions => _data["terms_and_conditions"];
+  String get with_premium_i_can => _data["with_premium_i_can"];
+  String get get_unlimited_hmus => _data["get_unlimited_hmus"];
+  String get see_users_just_from_your_country => _data["see_users_just_from_your_country"];
+  String get premium_avatars => _data["premium_avatars"];
+  String get choose_message_colour => _data["choose_message_colour"];
+  String get advert_free_experience => _data["advert_free_experience"];
+  String get priority_support_from_the_reveal_team => _data["priority_support_from_the_reveal_team"];
+  String get start_montly_plan => _data["start_montly_plan"];
+  String get start_weekly_plan => _data["start_weekly_plan"];
 }
 

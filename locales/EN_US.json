@@ -28,6 +28,27 @@
     "who_floats_your_boat": "Who floats your boat?",
     "nickname_hint": "Your nick name will be used instead of your real name.",
     "nickname": "Nickname",
-    "revealchatcom": "revealchat.com/"
+    "revealchatcom": "revealchat.com/",
+    "add_your_avatar": "Add your avatar",
+    "avatar_notice": "This is how others will see you in the group.",
+    "start_chatting": "Start Chatting",
+    "premium_avatar_locked": "PREMIUM AVATAR LOCKED",
+    "premium_avtar_notice": "This is a premium avatar. Upgrade to premiunm to unlock premium avatars and other cool features.",
+    "go_premium": "Go Premium",
+    "done": "Done",
+    "monthly_price": "$9.49 / Month",
+    "weekly_price": "$4.99 / Week",
+    "premium_modal_notice": "The subscription will automatically renew unless turned off in your iTunes account settings. Please turn off at least 24 hours before the current period ends. Your iTunes Account will be charged when the purchase is confirmed. You can go to your iTunes Account to manage your subscription and turn off auto-renew ",
+    "restore_purchase": "Restore Purchase",
+    "terms_and_conditions": "Terms & Conditions",
+    "with_premium_i_can": "With Premium I can",
+    "get_unlimited_hmus": "Get unlimted HMUs",
+    "see_users_just_from_your_country": "See users just from your country ",
+    "premium_avatars": "Premium avatars",
+    "choose_message_colour": "Choose message colour ",
+    "advert_free_experience": "Advert free experience",
+    "priority_support_from_the_reveal_team": "Priority support from the reveal team",
+    "start_montly_plan": "Start montly plan",
+    "start_weekly_plan": "Start weekly plan"
   }
 }

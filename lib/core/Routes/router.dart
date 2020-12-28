@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hmu/core/Routes/routes.dart';
 import 'package:hmu/features/signup/presentation/age_page.dart';
+import 'package:hmu/features/signup/presentation/avatar_page.dart';
 import 'package:hmu/features/signup/presentation/gender_page.dart';
 import 'package:hmu/features/signup/presentation/get_phone_number_page.dart';
 import 'package:hmu/features/signup/presentation/nick_name_page.dart';
@@ -40,6 +41,8 @@ class Router {
         return MaterialPageRoute(builder: (_) => WhoFloatsYourBoatPage());
       case nicknameRoute:
         return MaterialPageRoute(builder: (_) => NicknamePage());
+      case avatarRoute:
+        return MaterialPageRoute(builder: (_) => AvatarPage());
       default:
         return MaterialPageRoute(
             builder: (_) => Scaffold(
