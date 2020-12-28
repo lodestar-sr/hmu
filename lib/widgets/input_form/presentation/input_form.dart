@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_typeahead/flutter_typeahead.dart';
+import 'package:hmu/core/assets_address/icons.dart';
 import 'package:hmu/core/theme_and_app_size/app_theme.dart';
 import 'package:hmu/core/theme_and_app_size/sizes_config.dart';
+import 'package:hmu/widgets/buttons/button_icon.dart';
 
 import '../../../injection_container.dart';
 import '../../../main.dart';
@@ -80,20 +82,27 @@ class _InputFormState extends State<InputForm> {
                 showCursor: !widget.readOnly,
                 readOnly: widget.readOnly,
                 onChanged: (text) => widget.onChanged(text),
-                keyboardType: TextInputType.phone,
+                keyboardType: (widget.haveReloadIcon)
+                    ? TextInputType.name
+                    : TextInputType.phone,
                 textAlign: (widget.isSecure || widget.readOnly)
                     ? TextAlign.center
                     : TextAlign.left,
                 maxLength: widget.maxLentgh,
+                maxLengthEnforced: true,
                 style: Theme.of(context)
                     .textTheme
                     .headline2
                     .copyWith(fontWeight: FontWeight.w600),
                 decoration: InputDecoration(
                     contentPadding: EdgeInsets.fromLTRB(
-                        (widget.haveAreaCode) ? calWidthScale(120) : 0,
+                        (widget.haveAreaCode)
+                            ? calWidthScale(120)
+                            : (widget.haveReloadIcon)
+                                ? calHeightScale(170)
+                                : 0,
                         calHeightScale(10),
-                        (widget.haveReloadIcon) ? calWidthScale(10) : 0,
+                        (widget.haveReloadIcon) ? calWidthScale(50) : 0,
                         0),
                     border: InputBorder.none,
                     hintText: widget.placeHolder,
@@ -104,6 +113,22 @@ class _InputFormState extends State<InputForm> {
               ),
             ),
           ),
+          Visibility(
+              visible: widget.haveReloadIcon,
+              child: Positioned(
+                bottom: calHeightScale(57) / 6,
+                right: calWidthScale(13),
+                child: Container(
+                  width: calHeightScale(38),
+                  height: calHeightScale(38),
+                  decoration: BoxDecoration(
+                      shape: BoxShape.circle, color: AppTheme.middleGray),
+                  child: ButtonIcon(
+                    icon: ProjectIcons.reload,
+                    tapped: () {},
+                  ),
+                ),
+              )),
           Visibility(
             visible: widget.haveAreaCode,
             child: Positioned(

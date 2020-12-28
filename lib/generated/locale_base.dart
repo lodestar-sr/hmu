@@ -59,5 +59,8 @@ class Localemain {
   String get gender_variant => _data["gender_variant"];
   String get crossdresser => _data["crossdresser"];
   String get who_floats_your_boat => _data["who_floats_your_boat"];
+  String get nickname_hint => _data["nickname_hint"];
+  String get nickname => _data["nickname"];
+  String get revealchatcom => _data["revealchatcom"];
 }
 

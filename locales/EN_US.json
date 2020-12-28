@@ -25,6 +25,9 @@
     "gender_fluid": "Gender fluid",
     "gender_variant": "Gender variant",
     "crossdresser": "Crossdresser",
-    "who_floats_your_boat": "Who floats your boat?"
+    "who_floats_your_boat": "Who floats your boat?",
+    "nickname_hint": "Your nick name will be used instead of your real name.",
+    "nickname": "Nickname",
+    "revealchatcom": "revealchat.com/"
   }
 }
