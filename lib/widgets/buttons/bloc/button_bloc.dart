@@ -17,8 +17,11 @@ class ButtonBloc extends Bloc<ButtonEvent, ButtonState> {
   ) async* {
     if (event is ChangeButton)
       yield ButtonChanged(
-          backgroundColor: event.backgroundColor,
-          textColor: event.textColor,
-          bottomMargin: event.bottomMargin);
+        backgroundColor: event.backgroundColor,
+        textColor: event.textColor,
+        bottomMargin: event.bottomMargin,
+      );
+    else if (event is ChangeIndexAndText)
+      yield IndexAndTextChanged(index: event.index, text: event.text);
   }
 }

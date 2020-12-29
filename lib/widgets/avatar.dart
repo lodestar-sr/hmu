@@ -10,9 +10,9 @@ class Avatar extends StatelessWidget {
     return Container(
         width: calHeightScale(166),
         height: calHeightScale(166),
-        child: CircleAvatar(
-          backgroundColor: Colors.transparent,
-          child: Image.asset(path),
+        child: Image.asset(
+          path,
+          fit: BoxFit.cover,
         ));
   }
 }

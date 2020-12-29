@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:hmu/core/assets_address/icons.dart';
 import 'package:hmu/core/assets_address/images.dart';
 import 'package:hmu/core/theme_and_app_size/sizes_config.dart';
+import 'package:hmu/core/utils/presentation_functions.dart';
 import 'package:hmu/widgets/avatar.dart';
 import 'package:hmu/widgets/buttons/button_icon.dart';
 import 'package:hmu/widgets/buttons/button_text.dart';
+import 'package:hmu/widgets/modals/go_premium_modal.dart';
 import 'package:hmu/widgets/top_navigation.dart';
 
 import '../../../main.dart';
@@ -148,7 +150,9 @@ class PremiumPlan extends StatelessWidget {
         Spacer(),
         ButtonText(
             title: loc.main.go_premium,
-            tapped: () {},
+            tapped: () {
+              showModal(context, GoPremiumModal());
+            },
             backgroundColor: Colors.white,
             textColor: Colors.black,
             bottomMargin: calHeightScale(55))

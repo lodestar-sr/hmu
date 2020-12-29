@@ -1,12 +1,8 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:hmu/core/Routes/routes.dart';
-import 'package:hmu/core/assets_address/icons.dart';
-import 'package:hmu/core/theme_and_app_size/sizes_config.dart';
 import 'package:hmu/generated/locale_base.dart';
-import 'package:hmu/widgets/buttons/button_icon.dart';
 import 'package:hmu/widgets/logo.dart';
 
 import '../../../main.dart';

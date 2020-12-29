@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hmu/core/theme_and_app_size/sizes_config.dart';
 
 import '../../main.dart';
@@ -15,20 +16,25 @@ class ButtonFAB extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
         padding: EdgeInsets.only(bottom: MediaQuery.of(context).padding.bottom),
-        child: (state is ButtonChanged)
-            ? ButtonText(
+        child: BlocBuilder<ButtonBloc, ButtonState>(
+          builder: (context, state) {
+            if (state is ButtonChanged)
+              return ButtonText(
                 title: loc.main.continue_,
                 tapped: () => nextPage(),
                 backgroundColor: state.backgroundColor,
                 textColor: state.textColor,
                 bottomMargin: state.bottomMargin,
-              )
-            : ButtonText(
+              );
+            else
+              return ButtonText(
                 title: loc.main.continue_,
                 tapped: () => nextPage(),
                 backgroundColor: Colors.white,
                 textColor: Colors.black,
                 bottomMargin: calHeightScale(44),
-              ));
+              );
+          },
+        ));
   }
 }

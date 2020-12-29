@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:hmu/core/theme_and_app_size/app_theme.dart';
 import 'package:hmu/core/theme_and_app_size/sizes_config.dart';
 import 'package:hmu/widgets/buttons/button_icon.dart';
 
@@ -10,21 +9,29 @@ class ButtonText extends StatelessWidget {
   final Color textColor;
   final bool clickable;
   final double width;
+  final double height;
   final String icon;
   final double bottomMargin;
   final bool isCenter;
-  const ButtonText({
-    Key key,
-    @required this.title,
-    @required this.tapped,
-    @required this.bottomMargin,
-    this.backgroundColor = Colors.black,
-    this.textColor = Colors.white,
-    this.isCenter = true,
-    this.clickable = true,
-    this.width,
-    this.icon = "",
-  }) : super(key: key);
+  final int fontSize;
+  final int index;
+  final int currentIndex;
+  const ButtonText(
+      {Key key,
+      @required this.title,
+      @required this.tapped,
+      @required this.bottomMargin,
+      this.backgroundColor = Colors.black,
+      this.textColor = Colors.white,
+      this.isCenter = true,
+      this.clickable = true,
+      this.width,
+      this.height,
+      this.icon = "",
+      this.index = -1,
+      this.currentIndex = 0,
+      this.fontSize = 16})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -33,13 +40,17 @@ class ButtonText extends StatelessWidget {
         child: InkWell(
             onTap: () => tapped(),
             child: Container(
-                height: calHeightScale(44),
+                height: height ?? calHeightScale(44),
                 margin: EdgeInsets.only(bottom: bottomMargin),
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
-                  border: Border.all(color: textColor),
+                  border: Border.all(color: Colors.black),
                   borderRadius: BorderRadius.circular(9999),
-                  color: (clickable) ? backgroundColor : AppTheme.gray,
+                  color: (index != -1)
+                      ? (currentIndex == index)
+                          ? Colors.black
+                          : Colors.white
+                      : backgroundColor,
                 ),
                 width: width ?? calHeightScale(250),
                 child: Row(
@@ -53,11 +64,23 @@ class ButtonText extends StatelessWidget {
                         child: ButtonIcon(
                           icon: icon,
                           backgroundColor: backgroundColor,
-                          iconColor: textColor,
+                          iconColor: (index != -1)
+                              ? (currentIndex == index)
+                                  ? Colors.white
+                                  : Colors.black
+                              : textColor,
                         )),
                     Text(title,
                         style: Theme.of(context).textTheme.headline4.copyWith(
-                            fontWeight: FontWeight.w700, color: textColor)),
+                              fontSize: calHeightScale(
+                                  fontSize * SizeConfig.mostafaScaleNumber),
+                              fontWeight: FontWeight.w700,
+                              color: (index != -1)
+                                  ? (currentIndex == index)
+                                      ? Colors.white
+                                      : Colors.black
+                                  : textColor,
+                            )),
                   ],
                 ))));
   }
