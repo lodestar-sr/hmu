@@ -23,5 +23,7 @@ class ButtonBloc extends Bloc<ButtonEvent, ButtonState> {
       );
     else if (event is ChangeIndexAndText)
       yield IndexAndTextChanged(index: event.index, text: event.text);
+    else if (event is ChangeToggleButtonIndex)
+      yield ToggleButtonIndexChanged(index: event.index, value: event.value);
   }
 }

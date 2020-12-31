@@ -15,6 +15,7 @@ class ButtonText extends StatelessWidget {
   final bool isCenter;
   final int fontSize;
   final int index;
+  final bool haveBorder;
   final int currentIndex;
   const ButtonText(
       {Key key,
@@ -25,6 +26,7 @@ class ButtonText extends StatelessWidget {
       this.textColor = Colors.white,
       this.isCenter = true,
       this.clickable = true,
+      this.haveBorder = true,
       this.width,
       this.height,
       this.icon = "",
@@ -44,7 +46,8 @@ class ButtonText extends StatelessWidget {
                 margin: EdgeInsets.only(bottom: bottomMargin),
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
-                  border: Border.all(color: Colors.black),
+                  border: Border.all(
+                      color: (haveBorder) ? Colors.black : Colors.transparent),
                   borderRadius: BorderRadius.circular(9999),
                   color: (index != -1)
                       ? (currentIndex == index)

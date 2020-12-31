@@ -1,4 +1,5 @@
 import 'package:get_it/get_it.dart';
+import 'package:hmu/features/bottombar_provider/presentation/bloc/bottombar_provider_bloc.dart';
 import 'package:hmu/widgets/buttons/bloc/button_bloc.dart';
 import 'package:hmu/widgets/input_form/data/datasources/input_form_local_data_source.dart';
 import 'package:hmu/widgets/input_form/data/repository/input_form_repository_impl.dart';
@@ -9,7 +10,12 @@ import 'package:hmu/widgets/spin_number_picker/bloc/change_age_bloc.dart';
 
 final sl = GetIt.instance;
 Future<void> init() async {
+  _injectBottombarPrpvider();
   _injectWidget();
+}
+
+void _injectBottombarPrpvider() {
+  sl.registerFactory(() => BottombarProviderBloc());
 }
 
 void _injectWidget() {

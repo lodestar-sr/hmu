@@ -1,7 +1,7 @@
 {
   "main": {
     "try_again": "this used in tray again widget",
-    "hmu": "this used in splash page",
+    "hmu": "this used in splash and time line page",
     "intro": "this used in intro page",
     "get_started": "this used in intro page",
     "login": "this used in intro page",
@@ -49,6 +49,12 @@
     "advert_free_experience": "this used in premium modal page",
     "priority_support_from_the_reveal_team": "this used in premium modal ",
     "start_montly_plan": "this used in premium modal",
-    "start_weekly_plan": "this used in premium modal "
+    "start_weekly_plan": "this used in premium modal ",
+    "all": "this used in time line page",
+    "male": "this used in time line page",
+    "female": "this used in time line page",
+    "worldwide": "this used in time line page",
+    "eighteen_ninety_nine": "this used in time line page",
+    "post_a_hmu": "this used in time line page"
   }
 }

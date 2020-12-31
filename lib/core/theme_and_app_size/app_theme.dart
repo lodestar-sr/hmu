@@ -12,6 +12,8 @@ class AppTheme {
     visualDensity: VisualDensity.adaptivePlatformDensity,
     brightness: Brightness.light,
     textTheme: lightTextTheme,
+    splashColor: Colors.transparent,
+    highlightColor: Colors.transparent,
     fontFamily: "Poppins",
   );
   static final TextTheme lightTextTheme = TextTheme(

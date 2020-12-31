@@ -83,5 +83,11 @@ class Localemain {
   String get priority_support_from_the_reveal_team => _data["priority_support_from_the_reveal_team"];
   String get start_montly_plan => _data["start_montly_plan"];
   String get start_weekly_plan => _data["start_weekly_plan"];
+  String get all => _data["all"];
+  String get male => _data["male"];
+  String get female => _data["female"];
+  String get worldwide => _data["worldwide"];
+  String get eighteen_ninety_nine => _data["eighteen_ninety_nine"];
+  String get post_a_hmu => _data["post_a_hmu"];
 }
 

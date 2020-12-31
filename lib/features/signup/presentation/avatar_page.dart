@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hmu/core/Routes/routes.dart';
 import 'package:hmu/core/assets_address/icons.dart';
 import 'package:hmu/core/assets_address/images.dart';
 import 'package:hmu/core/theme_and_app_size/sizes_config.dart';
@@ -107,7 +108,8 @@ class FreePlan extends StatelessWidget {
         Spacer(),
         ButtonText(
             title: loc.main.start_chatting,
-            tapped: () {},
+            tapped: () =>
+                Navigator.pushReplacementNamed(context, bottombarPoviderRoute),
             bottomMargin: calHeightScale(55))
       ],
     );

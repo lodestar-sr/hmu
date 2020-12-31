@@ -48,18 +48,17 @@ class _GoPremiumModalState extends State<GoPremiumModal> {
                                     fontWeight: FontWeight.w400),
                           ),
                         ),
-                        SizedBox(
-                          width: calWidthScale(55),
-                        ),
-                        Container(
-                          alignment: Alignment.center,
-                          child: Text(loc.main.go_premium,
-                              style: Theme.of(context)
-                                  .textTheme
-                                  .headline3
-                                  .copyWith(
-                                      fontSize: calHeightScale(20),
-                                      fontWeight: FontWeight.w600)),
+                        Flexible(
+                          child: Container(
+                            alignment: Alignment.center,
+                            child: Text(loc.main.go_premium,
+                                style: Theme.of(context)
+                                    .textTheme
+                                    .headline3
+                                    .copyWith(
+                                        fontSize: calHeightScale(20),
+                                        fontWeight: FontWeight.w600)),
+                          ),
                         )
                       ],
                     )),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hmu/core/Routes/routes.dart';
+import 'package:hmu/features/bottombar_provider/presentation/bottombar_provider.dart';
 import 'package:hmu/features/signup/presentation/age_page.dart';
 import 'package:hmu/features/signup/presentation/avatar_page.dart';
 import 'package:hmu/features/signup/presentation/gender_page.dart';
@@ -43,6 +44,8 @@ class Router {
         return MaterialPageRoute(builder: (_) => NicknamePage());
       case avatarRoute:
         return MaterialPageRoute(builder: (_) => AvatarPage());
+      case bottombarPoviderRoute:
+        return MaterialPageRoute(builder: (_) => BottomBarProvider());
       default:
         return MaterialPageRoute(
             builder: (_) => Scaffold(

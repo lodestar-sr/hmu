@@ -29,3 +29,10 @@ class IndexAndTextChanged extends ButtonState {
   IndexAndTextChanged({@required this.index, @required this.text});
   List<Object> get props => [index, text];
 }
+
+class ToggleButtonIndexChanged extends ButtonState {
+  final int index;
+  final bool value;
+  ToggleButtonIndexChanged({@required this.index, this.value});
+  List<Object> get props => [index, value];
+}
