@@ -89,5 +89,17 @@ class Localemain {
   String get worldwide => _data["worldwide"];
   String get eighteen_ninety_nine => _data["eighteen_ninety_nine"];
   String get post_a_hmu => _data["post_a_hmu"];
+  String get over_18s_only => _data["over_18s_only"];
+  String get over18_dialog => _data["over18_dialog"];
+  String get dont_get_naked => _data["dont_get_naked"];
+  String get i_am_over_18 => _data["i_am_over_18"];
+  String get i_agree => _data["i_agree"];
+  String get house_rules => _data["house_rules"];
+  String get house_rules_dialog => _data["house_rules_dialog"];
+  String get dont_get_naked_dialog => _data["dont_get_naked_dialog"];
+  String get play_nicely => _data["play_nicely"];
+  String get play_nicely_dialog => _data["play_nicely_dialog"];
+  String get terms_of_use => _data["terms_of_use"];
+  String get terms_of_use_dialog => _data["terms_of_use_dialog"];
 }
 

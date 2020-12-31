@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hmu/core/assets_address/icons.dart';
@@ -22,21 +24,24 @@ class TimeLinePage extends StatefulWidget {
 class _TimeLinePageState extends State<TimeLinePage> {
   List<bool> tagsSelected = [true, false, false, false, false];
   List<Post> posts = [];
+
   @override
   void initState() {
     Post post1 = Post(
         time: "Just now",
         username: "Stormy_Fog",
-        userYear: "18y",
+        userAge: "18y",
         haveContactIcon: true);
     Post post2 = Post(
       time: "Just now",
       username: "tin_post",
-      userYear: "24y",
+      userAge: "24y",
     );
-    Post post3 = Post(time: "Just now", username: "car_walk", userYear: "19y");
-    Post post4 = Post(time: "Just now", username: "mix_pasta", userYear: "27y");
+    Post post3 = Post(time: "Just now", username: "car_walk", userAge: "19y");
+    Post post4 = Post(time: "Just now", username: "mix_pasta", userAge: "27y");
     posts = [post1, post2, post3, post4];
+
+    super.initState();
   }
 
   @override

@@ -55,6 +55,18 @@
     "female": "this used in time line page",
     "worldwide": "this used in time line page",
     "eighteen_ninety_nine": "this used in time line page",
-    "post_a_hmu": "this used in time line page"
+    "post_a_hmu": "this used in time line page",
+    "over_18s_only": "this used in dialog",
+    "over18_dialog": "this used in dialog",
+    "dont_get_naked": "this used in modal",
+    "i_am_over_18": "this used in modal",
+    "i_agree": "this used in dialog",
+    "house_rules": "this used in dialog",
+    "house_rules_dialog": "this used in dialog",
+    "dont_get_naked_dialog": "this used in dialog ",
+    "play_nicely": "this used in dialog",
+    "play_nicely_dialog": "this used in dialog",
+    "terms_of_use": "this used in dialog",
+    "terms_of_use_dialog": "this used in dialog"
   }
 }

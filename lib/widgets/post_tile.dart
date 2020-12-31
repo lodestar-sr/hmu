@@ -68,7 +68,7 @@ class PostTile extends StatelessWidget {
                         color: Colors.white),
                   ),
                   Text(
-                    post.userYear,
+                    post.userAge,
                     style: Theme.of(context).textTheme.headline6.copyWith(
                         fontSize: calHeightScale(17),
                         fontWeight: FontWeight.w600,

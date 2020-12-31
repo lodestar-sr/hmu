@@ -55,6 +55,18 @@
     "female": "Female",
     "worldwide": "Worldwide",
     "eighteen_ninety_nine": "18 - 99",
-    "post_a_hmu": "Post a HMU"
+    "post_a_hmu": "Post a HMU",
+    "over_18s_only": "Over 18s only",
+    "over18_dialog": "HMU is intended to only be used by users over the age of 18.\n\nIf you are younger than 18, please close and delete the app now",
+    "dont_get_naked": "Don’t get naked",
+    "i_am_over_18": "I am over 18",
+    "i_agree": "I agree",
+    "house_rules": "House Rules",
+    "house_rules_dialog": "We are a pretty open bunch at reveal but we do have some rules to keep everyone happy and safe.\n\nYou must agree and follow these rules ",
+    "dont_get_naked_dialog": "Feel free to be a little flirty but full frontal nudity is a big no no and is prohibited.\n\nYour account will be banned if you dont comply",
+    "play_nicely": "Play nicely",
+    "play_nicely_dialog": "If we find any aggressive, violent or inflammatory content your account will be removed and banned.\n\nThe HMU community is a safe and inclusive place",
+    "terms_of_use": "Terms of Use",
+    "terms_of_use_dialog": "If we find any aggressive, violent or inflammatory content your account will be removed and banned.\n\nThe Reveal community is a safe and inclusive place "
   }
 }

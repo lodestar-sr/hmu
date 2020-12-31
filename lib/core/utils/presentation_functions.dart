@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hmu/widgets/buttons/bloc/button_bloc.dart';
+import 'package:hmu/widgets/modals/dialog_to_user.dart';
 
 void buttonChanger(
   BuildContext context,
@@ -23,5 +24,17 @@ void showModal(BuildContext context, Widget page) {
       context: context,
       builder: (BuildContext context) {
         return page;
+      });
+}
+
+void showDialogToUser(BuildContext context, Widget dialog) {
+  showDialog(
+      context: context,
+      barrierDismissible: false,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          backgroundColor: Colors.transparent,
+          content: dialog,
+        );
       });
 }
