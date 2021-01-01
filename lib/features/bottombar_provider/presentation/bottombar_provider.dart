@@ -5,6 +5,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hmu/core/assets_address/icons.dart';
 import 'package:hmu/core/utils/presentation_functions.dart';
 import 'package:hmu/features/posts/presentation/time_line_page.dart';
+import 'package:hmu/features/user/presentation/profile_page.dart';
 import 'package:hmu/widgets/buttons/button_bottombar_item.dart';
 import 'package:hmu/widgets/modals/dialog_to_user.dart';
 import 'package:hmu/widgets/modals/hmu_modal.dart';
@@ -26,9 +27,7 @@ class _BottomBarProviderState extends State<BottomBarProvider> {
       child: Text("1"),
     ),
     TimeLinePage(),
-    Center(
-      child: Text("3"),
-    )
+    ProfilePage()
   ];
   @override
   void initState() {

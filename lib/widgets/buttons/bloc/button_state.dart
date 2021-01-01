@@ -36,3 +36,10 @@ class ToggleButtonIndexChanged extends ButtonState {
   ToggleButtonIndexChanged({@required this.index, this.value});
   List<Object> get props => [index, value];
 }
+
+class SwitcherChanged extends ButtonState {
+  final bool value;
+  SwitcherChanged({@required this.value});
+  @override
+  List<Object> get props => [value];
+}

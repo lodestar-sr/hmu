@@ -105,5 +105,28 @@ class Localemain {
   String get claim_hmu => _data["claim_hmu"];
   String get reveals => _data["reveals"];
   String get upgrade_to_premium => _data["upgrade_to_premium"];
+  String get profile => _data["profile"];
+  String get account_info => _data["account_info"];
+  String get phone => _data["phone"];
+  String get show_active_status => _data["show_active_status"];
+  String get account_verification => _data["account_verification"];
+  String get verify_your_account => _data["verify_your_account"];
+  String get general => _data["general"];
+  String get push_notifications => _data["push_notifications"];
+  String get theme => _data["theme"];
+  String get system_default => _data["system_default"];
+  String get blocked_users => _data["blocked_users"];
+  String get frequently_asked_questions => _data["frequently_asked_questions"];
+  String get preferences => _data["preferences"];
+  String get notifications_and_sounds => _data["notifications_and_sounds"];
+  String get notifications_and_sounds_hint => _data["notifications_and_sounds_hint"];
+  String get support => _data["support"];
+  String get share_your_feed_back => _data["share_your_feed_back"];
+  String get restore_purcahse => _data["restore_purcahse"];
+  String get about => _data["about"];
+  String get privacy_policy => _data["privacy_policy"];
+  String get logout => _data["logout"];
+  String get deactive_your_account => _data["deactive_your_account"];
+  String get delete_account => _data["delete_account"];
 }
 

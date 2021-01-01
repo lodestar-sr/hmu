@@ -35,7 +35,7 @@ class ButtonIcon extends StatelessWidget {
             padding: EdgeInsets.all(padding ?? calHeightScale(10)),
             decoration: BoxDecoration(
                 color: (!clickable) ? Colors.transparent : backgroundColor,
-                borderRadius: BorderRadius.circular(10)),
+                borderRadius: BorderRadius.circular(9999)),
             child: SvgPicture.asset(
               icon,
               color: iconColor,

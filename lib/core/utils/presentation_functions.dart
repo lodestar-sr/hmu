@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hmu/widgets/buttons/bloc/button_bloc.dart';
-import 'package:hmu/widgets/modals/dialog_to_user.dart';
 
 void buttonChanger(
   BuildContext context,

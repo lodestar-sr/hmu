@@ -21,6 +21,7 @@ class ChangeIndexAndText extends ButtonEvent {
   final String text;
   final int index;
   ChangeIndexAndText({@required this.index, @required this.text});
+  @override
   List<Object> get props => [index, text];
 }
 
@@ -28,5 +29,13 @@ class ChangeToggleButtonIndex extends ButtonEvent {
   final int index;
   final bool value;
   ChangeToggleButtonIndex({@required this.index, this.value});
+  @override
   List<Object> get props => [index, value];
+}
+
+class ChangeSwitcher extends ButtonEvent {
+  final bool value;
+  ChangeSwitcher({@required this.value});
+  @override
+  List<Object> get props => [value];
 }

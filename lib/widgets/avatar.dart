@@ -3,16 +3,19 @@ import 'package:hmu/core/theme_and_app_size/sizes_config.dart';
 
 class Avatar extends StatelessWidget {
   final String path;
-  const Avatar({Key key, @required this.path}) : super(key: key);
+  final double width;
+  final double height;
+  const Avatar({Key key, @required this.path, this.height, this.width})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
-        width: calHeightScale(166),
-        height: calHeightScale(166),
+        width: width ?? calHeightScale(166),
+        height: height ?? calHeightScale(166),
         child: Image.asset(
           path,
-          fit: BoxFit.cover,
+          fit: BoxFit.fitHeight,
         ));
   }
 }
