@@ -7,6 +7,7 @@ import 'package:hmu/core/utils/presentation_functions.dart';
 import 'package:hmu/features/posts/presentation/time_line_page.dart';
 import 'package:hmu/widgets/buttons/button_bottombar_item.dart';
 import 'package:hmu/widgets/modals/dialog_to_user.dart';
+import 'package:hmu/widgets/modals/hmu_modal.dart';
 
 import '../../../injection_container.dart';
 import '../../../main.dart';
@@ -132,7 +133,8 @@ class _BottomBarProviderState extends State<BottomBarProvider> {
                                                   body: loc
                                                       .main.terms_of_use_dialog,
                                                   action: loc.main.i_agree,
-                                                  tapped: () {},
+                                                  tapped: () => showModal(
+                                                      context, HmuModal()),
                                                 ));
                                           }));
                                 },

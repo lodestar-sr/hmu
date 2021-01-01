@@ -1,6 +1,7 @@
 import 'package:get_it/get_it.dart';
 import 'package:hmu/features/bottombar_provider/presentation/bloc/bottombar_provider_bloc.dart';
 import 'package:hmu/widgets/buttons/bloc/button_bloc.dart';
+import 'package:hmu/widgets/count_down/bloc/count_down_bloc.dart';
 import 'package:hmu/widgets/input_form/data/datasources/input_form_local_data_source.dart';
 import 'package:hmu/widgets/input_form/data/repository/input_form_repository_impl.dart';
 import 'package:hmu/widgets/input_form/domain/repositories/input_form_repository.dart';
@@ -27,4 +28,5 @@ void _injectWidget() {
   sl.registerLazySingleton<InputFormLocalDataSource>(
       () => InputFormLocalDataSourceImpl());
   sl.registerFactory(() => ChangeAgeBloc());
+  sl.registerFactory(() => CountDownBloc());
 }

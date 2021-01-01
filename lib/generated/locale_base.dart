@@ -101,5 +101,9 @@ class Localemain {
   String get play_nicely_dialog => _data["play_nicely_dialog"];
   String get terms_of_use => _data["terms_of_use"];
   String get terms_of_use_dialog => _data["terms_of_use_dialog"];
+  String get you_get_50_hmu_in => _data["you_get_50_hmu_in"];
+  String get claim_hmu => _data["claim_hmu"];
+  String get reveals => _data["reveals"];
+  String get upgrade_to_premium => _data["upgrade_to_premium"];
 }
 

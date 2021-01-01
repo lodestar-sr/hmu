@@ -67,6 +67,10 @@
     "play_nicely": "Play nicely",
     "play_nicely_dialog": "If we find any aggressive, violent or inflammatory content your account will be removed and banned.\n\nThe HMU community is a safe and inclusive place",
     "terms_of_use": "Terms of Use",
-    "terms_of_use_dialog": "If we find any aggressive, violent or inflammatory content your account will be removed and banned.\n\nThe Reveal community is a safe and inclusive place "
+    "terms_of_use_dialog": "If we find any aggressive, violent or inflammatory content your account will be removed and banned.\n\nThe Reveal community is a safe and inclusive place ",
+    "you_get_50_hmu_in": "You get 50 HMU in",
+    "claim_hmu": "Claim HMU",
+    "reveals": "Reveals",
+    "upgrade_to_premium": "Upgrade to our premium plan and never worry about running out of HMUs again."
   }
 }

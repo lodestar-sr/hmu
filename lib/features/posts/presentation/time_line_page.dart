@@ -81,6 +81,8 @@ class _TimeLinePageState extends State<TimeLinePage> {
                           textColor: Colors.black,
                           haveBorder: false,
                           width: calWidthScale(70),
+                          height: calHeightScale(40),
+                          iconPadding: calHeightScale(10),
                           bottomMargin: 0,
                           icon: ProjectIcons.icon,
                           backgroundColor: AppTheme.gray,

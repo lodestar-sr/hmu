@@ -67,6 +67,10 @@
     "play_nicely": "this used in dialog",
     "play_nicely_dialog": "this used in dialog",
     "terms_of_use": "this used in dialog",
-    "terms_of_use_dialog": "this used in dialog"
+    "terms_of_use_dialog": "this used in dialog",
+    "you_get_50_hmu_in": "this used in hmu modal",
+    "claim_hmu": "this used in hmu modal",
+    "reveals": "this used in hmu modal",
+    "upgrade_to_premium": "this used in hmu modal"
   }
 }

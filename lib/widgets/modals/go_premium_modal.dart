@@ -3,10 +3,10 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hmu/core/theme_and_app_size/sizes_config.dart';
 import 'package:hmu/widgets/buttons/bloc/button_bloc.dart';
 import 'package:hmu/widgets/buttons/button_text.dart';
-import 'package:hmu/widgets/check_mark_text.dart';
 
 import '../../injection_container.dart';
 import '../../main.dart';
+import '../check_mark_features.dart';
 
 class GoPremiumModal extends StatefulWidget {
   GoPremiumModal({Key key}) : super(key: key);
@@ -146,13 +146,7 @@ class _GoPremiumModalState extends State<GoPremiumModal> {
                     ),
                   ],
                 ),
-                CheckMarkText(text: loc.main.get_unlimited_hmus),
-                CheckMarkText(text: loc.main.see_users_just_from_your_country),
-                CheckMarkText(text: loc.main.premium_avatars),
-                CheckMarkText(text: loc.main.choose_message_colour),
-                CheckMarkText(text: loc.main.advert_free_experience),
-                CheckMarkText(
-                    text: loc.main.priority_support_from_the_reveal_team),
+                CheckMarkFeatures(),
                 SizedBox(
                   height: calHeightScale(80),
                 ),

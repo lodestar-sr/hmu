@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hmu/core/theme_and_app_size/app_theme.dart';
 import 'package:hmu/core/theme_and_app_size/sizes_config.dart';
 import 'package:hmu/widgets/buttons/button_icon.dart';
 
@@ -16,6 +17,7 @@ class ButtonText extends StatelessWidget {
   final int fontSize;
   final int index;
   final bool haveBorder;
+  final double iconPadding;
   final int currentIndex;
   const ButtonText(
       {Key key,
@@ -31,6 +33,7 @@ class ButtonText extends StatelessWidget {
       this.height,
       this.icon = "",
       this.index = -1,
+      this.iconPadding,
       this.currentIndex = 0,
       this.fontSize = 16})
       : super(key: key);
@@ -47,13 +50,19 @@ class ButtonText extends StatelessWidget {
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
                   border: Border.all(
-                      color: (haveBorder) ? Colors.black : Colors.transparent),
+                      color: (!clickable)
+                          ? Colors.transparent
+                          : (haveBorder)
+                              ? Colors.black
+                              : Colors.transparent),
                   borderRadius: BorderRadius.circular(9999),
                   color: (index != -1)
                       ? (currentIndex == index)
                           ? Colors.black
                           : Colors.white
-                      : backgroundColor,
+                      : (!clickable)
+                          ? AppTheme.middleGray
+                          : backgroundColor,
                 ),
                 width: width ?? calHeightScale(250),
                 child: Row(
@@ -66,6 +75,8 @@ class ButtonText extends StatelessWidget {
                         visible: icon.isNotEmpty,
                         child: ButtonIcon(
                           icon: icon,
+                          clickable: clickable,
+                          padding: iconPadding,
                           backgroundColor: backgroundColor,
                           iconColor: (index != -1)
                               ? (currentIndex == index)
