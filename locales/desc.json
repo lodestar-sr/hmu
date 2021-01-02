@@ -94,6 +94,9 @@
     "privacy_policy": "this used in profile page",
     "logout": "this used in profile page",
     "deactive_your_account": "this used in profile page",
-    "delete_account": "this used in profile page"
+    "delete_account": "this used in profile page",
+    "messages": "this used in messages page",
+    "search": "this used in messages page",
+    "you": "this used in messages page"
   }
 }

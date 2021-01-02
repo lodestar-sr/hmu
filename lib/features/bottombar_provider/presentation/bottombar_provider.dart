@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hmu/core/assets_address/icons.dart';
 import 'package:hmu/core/utils/presentation_functions.dart';
+import 'package:hmu/features/chat/presentation/messages_page.dart';
 import 'package:hmu/features/posts/presentation/time_line_page.dart';
 import 'package:hmu/features/user/presentation/profile_page.dart';
 import 'package:hmu/widgets/buttons/button_bottombar_item.dart';
@@ -22,13 +23,7 @@ class BottomBarProvider extends StatefulWidget {
 }
 
 class _BottomBarProviderState extends State<BottomBarProvider> {
-  List<Widget> _children = [
-    Center(
-      child: Text("1"),
-    ),
-    TimeLinePage(),
-    ProfilePage()
-  ];
+  List<Widget> _children = [MessagePage(), TimeLinePage(), ProfilePage()];
   @override
   void initState() {
     _showDialogs(context);

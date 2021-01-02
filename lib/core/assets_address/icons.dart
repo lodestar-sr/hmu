@@ -12,4 +12,5 @@ class ProjectIcons {
   static final String avatarDeactive = 'assets/icons/avatarIconDeactive.png';
   static final String contact = 'assets/icons/contact.svg';
   static final String share = 'assets/icons/share.svg';
+  static final String search = 'assets/icons/search.svg';
 }

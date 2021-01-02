@@ -128,5 +128,8 @@ class Localemain {
   String get logout => _data["logout"];
   String get deactive_your_account => _data["deactive_your_account"];
   String get delete_account => _data["delete_account"];
+  String get messages => _data["messages"];
+  String get search => _data["search"];
+  String get you => _data["you"];
 }
 

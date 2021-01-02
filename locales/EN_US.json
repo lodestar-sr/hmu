@@ -94,6 +94,9 @@
     "privacy_policy": "Privacy Policy",
     "logout": "Log out",
     "deactive_your_account": "Deactive your account",
-    "delete_account": "Delete account"
+    "delete_account": "Delete account",
+    "messages": "Messages",
+    "search": "Search",
+    "you": "You"
   }
 }
