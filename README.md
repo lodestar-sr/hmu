@@ -1,6 +1,6 @@
 # hmu
 
-A new Flutter project.
+Flutter Readtime chat project.
 
 ## Getting Started
 
